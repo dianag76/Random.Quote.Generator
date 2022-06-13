@@ -53,6 +53,7 @@ function getrandomQuote() {
  * `printQuote` function
 ***/
 
+if (randomQuote.citation) {
 
 
 /***
