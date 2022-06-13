@@ -54,7 +54,15 @@ function getrandomQuote() {
 ***/
 
 if (randomQuote.citation) {
+    html += `<span class = "citation"> ${randomQuote.citation}</span>`;
+  } //If citation is available, will display information
+  if (randomQuote.year) {
+  }
+  html+=`</p>`// If year is avaialble, will add a year tag to html. 
 
+//Will display quote, source, and other applicable information
+return document.getElementById('quote-box').innerHTML = html;
+}
 
 /***
  * click event listener for the print quote button
