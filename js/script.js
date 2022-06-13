@@ -25,6 +25,7 @@ const quotes = [{
   source : "Gabriel Garcia Marquez",
   citation : "The Alchemist",
 },
+{
   quote : " You are your best thing",
   source : "Toni Morrison",
   citation : "Beloved",
