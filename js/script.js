@@ -27,6 +27,7 @@ const quotes = [{
 },
   quote : " You are your best thing",
   source : "Toni Morrison",
+  citation : "Beloved",
 },
 {
   quote : "Lo malo ya paso, el tiempo es mi doctor... la vida es una movie, soy mi propio director",
@@ -53,10 +54,18 @@ function getrandomQuote() {
  * `printQuote` function
 ***/
 
+function printQuote() {
+  const randomQuote = getrandomQuote();
+  let html = `
+  <p class = "quote"> ${randomQuote.quote} </p>
+  <p class = "source"> ${randomQuote.source}`;
+
+  //conditional statements: 
 if (randomQuote.citation) {
     html += `<span class = "citation"> ${randomQuote.citation}</span>`;
   } //If citation is available, will display information
   if (randomQuote.year) {
+  html += `<span class = "year"> ${randomQuote.year}</span>`;
   }
   html+=`</p>`// If year is avaialble, will add a year tag to html. 
 
